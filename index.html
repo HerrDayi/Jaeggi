@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahel Jaeggi: Entfremdung als Beziehungsverlust (2005) – Digitale Lernumgebung</title>
+    <!-- Google Fonts: Carlito & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div class="app-container">
+
+        <!-- Top App Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <span class="badge">Philosophie Q1</span>
+                <span class="instructor">Herr Dayi</span>
+                <span class="topic-tag">Anthropologie & Kultur</span>
+            </div>
+            <div class="header-center">
+                <h1 class="header-title">Rahel Jaeggi – Entfremdung als Beziehungsverlust (2005)</h1>
+            </div>
+            <div class="header-right">
+                <div class="control-group">
+                    <button id="btn-text-decrease" class="icon-btn" title="Schriftgröße verkleinern" aria-label="Schrift verkleinern">A-</button>
+                    <button id="btn-text-increase" class="icon-btn" title="Schriftgröße vergrößern" aria-label="Schrift vergrößern">A+</button>
+                </div>
+                <div class="divider"></div>
+                <button id="btn-theme-toggle" class="theme-toggle-btn" title="Farbschema wechseln" aria-label="Farbschema wechseln">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <span id="theme-text">Dunkelmodus</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Schnell-Download-Leiste -->
+        <nav class="quick-downloads-bar" aria-label="Schnell-Downloads">
+            <span style="font-weight: 700; color: var(--primary-blue); font-size: 0.85rem; margin-right: 4px;">📥 Materialien:</span>
+            <a href="Arbeitsblatt_Jaeggi.pdf" download class="dl-chip" title="Arbeitsblatt herunterladen">
+                📄 Arbeitsblatt (PDF)
+            </a>
+            <a href="https://herrdayi.github.io/AO/" target="_blank" rel="noopener noreferrer" class="dl-chip ao" title="Zum digitalen Advanced Organizer">
+                🧭 Advanced Organizer ↗
+            </a>
+        </nav>
+
+        <!-- Top Navigation (2 Tabs) -->
+        <nav class="top-chapter-nav" aria-label="Navigation">
+            <button class="chap-tab-btn active" data-chap-tab="text">
+                <span class="step-num">Tab 1</span>
+                <span class="step-label">📖 Text & Begriffserklärungen</span>
+            </button>
+            <button class="chap-tab-btn" data-chap-tab="hilfe">
+                <span class="step-num">Tab 2</span>
+                <span class="step-label">🧩 Stufenhilfen & Methodenunterstützung</span>
+            </button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="app-content-full">
+
+            <!-- =============================================================== -->
+            <!-- TAB 1: TEXT & BEGRIFFSERKLÄRUNGEN                               -->
+            <!-- =============================================================== -->
+            <div class="chap-panel active" id="chap-panel-text">
+
+                <!-- Sticky Glossar Card -->
+                <div class="card vocab-card-horizontal" id="vocab-card">
+                    <div class="card-header">
+                        <div class="card-header-left">
+                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            <h2>Begriffserklärungen & Philosophische Leitbegriffe</h2>
+                        </div>
+                        <span class="vocab-hint-badge">Klick auf blau markierte Begriffe im Text</span>
+                    </div>
+                    <div class="card-body">
+                        <div id="vocab-placeholder" class="placeholder-box">
+                            Klicke auf einen <span class="vocab-inline-example">blau unterstrichenen Fachbegriff</span> im Text, um die begriffliche Definition und Jaeggis Argumentationszusammenhang einzublenden.
+                        </div>
+                        <div id="vocab-content" class="vocab-display hidden">
+                            <div class="vocab-header-row">
+                                <h3 id="vocab-title" class="vocab-title">Begriff</h3>
+                                <span id="vocab-type" class="vocab-type">Kategorie</span>
+                            </div>
+                            <p id="vocab-definition" class="vocab-definition">Erklärung...</p>
+                            <div class="vocab-context-box">
+                                <strong>Jaeggis Argumentationsgang & Kontext:</strong>
+                                <p id="vocab-context">Kontext...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Textbereich mit Zeilennummern -->
+                <article class="philosophical-text">
+                    
+                    <!-- Abschnitt 1 -->
+                    <div class="section-heading-wrapper" data-section="1">
+                        <span class="section-chip">Abschnitt 1 · Z. 1–8</span>
+                        <h3 class="section-heading">I. Das Phänomen: Indifferenz und existenzielle Fremdheit</h3>
+                    </div>
+                    <div class="text-paragraph" data-sec-p="1">
+                        <span class="line-counter">1<br>5</span>
+                        „Entfremdung bedeutet <span class="vocab-term" data-term="Indifferenz und Entzweiung">Indifferenz und Entzweiung</span>, <span class="vocab-term" data-term="Machtlosigkeit & Beziehungslosigkeit">Machtlosigkeit und Beziehungslosigkeit</span> sich selbst und einer als gleichgültig und fremd erfahrenen Welt gegenüber. Entfremdung ist das Unvermögen, sich zu anderen Menschen, zu Dingen, zu gesellschaftlichen Institutionen und damit – so eine Grundintention des Entfremdungsmotivs – zu sich selbst in Beziehung zu setzen. Eine entfremdete Welt präsentiert sich dem Individuum als sinn- und bedeutungslos, erstarrt oder verarmt, als eine Welt, die nicht »die seine« ist, in der es <span class="vocab-term" data-term="Nicht »zu Hause« sein">nicht »zu Hause« ist</span> oder auf die es keinen Einfluss nehmen kann. […]“
+                    </div>
+
+                    <!-- Abschnitt 2 -->
+                    <div class="section-heading-wrapper" data-section="2">
+                        <span class="section-chip">Abschnitt 2 · Z. 9–14</span>
+                        <h3 class="section-heading">II. Das Paradoxon: Entmächtigung und Herrschaft im Mitspielen</h3>
+                    </div>
+                    <div class="text-paragraph" data-sec-p="2">
+                        <span class="line-counter">10</span>
+                        „Entfremdete Verhältnisse sind Verhältnisse, in denen wir als Subjekte <span class="vocab-term" data-term="Entmächtigung der Subjekte">entmächtigt</span> sind. […] Die Krux ist, dass uns jene Rollen, die wir einnehmen, oder die sozialen Institutionen als fremd erscheinen, obwohl wir die Rollen gleichzeitig spielen und die Institutionen von uns miterschaffen sind. Mit dem Entfremdungsbegriff ist ein Zusammenhang zwischen Indifferenz und Herrschaft gesetzt, den es zu deuten gilt.“
+                    </div>
+
+                    <!-- Abschnitt 3 -->
+                    <div class="section-heading-wrapper" data-section="3">
+                        <span class="section-chip">Abschnitt 3 · Z. 15–20</span>
+                        <h3 class="section-heading">III. Die Beziehungsform: Täter und Opfer im eigenen Tun</h3>
+                    </div>
+                    <div class="text-paragraph" data-sec-p="3">
+                        <span class="line-counter">15<br>20</span>
+                        „Entfremdung ist eine spezifische Form der Beziehung, nicht eine Nicht-Beziehung oder die bloße Abwesenheit einer Beziehung. Entfremdung beschreibt nicht das Nicht-vorhandensein, sondern die Qualität einer Beziehung [<span class="vocab-term" data-term="Beziehung der Beziehungslosigkeit">Beziehung der Beziehungslosigkeit</span>]. […] Entfremdet sind wir immer von etwas, das uns gleichzeitig zu eigen und fremd ist; in Verhältnisse involviert, in denen wir uns unserer selbst entfremden, sind wir auf spezifische Weise gleichzeitig <span class="vocab-term" data-term="Täter und Opfer zugleich">Täter und Opfer</span>. […]“
+                    </div>
+
+                    <!-- Abschnitt 4 -->
+                    <div class="section-heading-wrapper" data-section="4">
+                        <span class="section-chip">Abschnitt 4 · Z. 21–25</span>
+                        <h3 class="section-heading">IV. Die Lösung: Gelingende Aneignung als Freiheitsvollzug</h3>
+                    </div>
+                    <div class="text-paragraph" data-sec-p="4">
+                        <span class="line-counter">25</span>
+                        „Entfremdung lässt sich dann als die Beeinträchtigung von <span class="vocab-term" data-term="Aneignungsvollzüge (Appropriation)">Aneignungsvollzügen</span> (oder als <span class="vocab-term" data-term="Defiziente Praxis">defiziente Praxis der Aneignung</span>) verstehen. […] Entfremdet ist, wer <span class="vocab-term" data-term="Zu Voraussetzungen verhalten">sich zu seinen Voraussetzungen nicht verhalten</span>, wer sich seine Voraussetzungen nicht aneignen kann.“
+                    </div>
+
+                    <div class="text-source">
+                        <strong>Quelle:</strong> Rahel Jaeggi: <em>Entfremdung. Zur Aktualität eines sozialphilosophischen Problems</em>. Frankfurt am Main: Campus Verlag 2005, S. 20, 41 f., 43 f., 55, 70, 185.
+                    </div>
+                </article>
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- TAB 2: STUFENHILFEN & METHODENUNTERSTÜTZUNG                    -->
+            <!-- =============================================================== -->
+            <div class="chap-panel" id="chap-panel-hilfe">
+
+                <!-- Methodenkarte: Think-Pair-Share -->
+                <div class="help-card featured">
+                    <div class="help-card-header">
+                        <span class="help-badge">Methodenkarte</span>
+                        <h2 class="help-card-title">Methode: Think – Pair – Share</h2>
+                    </div>
+                    <div class="guide-desc">
+                        <strong>Arbeitsschritte für die heutige Stunde:</strong>
+                    </div>
+                    <div class="hierarchy-flow" style="margin-top: 8px;">
+                        <div class="flow-step">
+                            <span class="flow-step-num">Schritt 1: Think (ca. 6 Min.)</span>
+                            <div class="flow-step-title">Einzelarbeit (Arbeitsteilig)</div>
+                            <p class="flow-step-desc"><strong>Partner A</strong> konzentriert sich auf das <em>Phänomen der Entfremdung</em> (Z. 1–14 & Täter/Opfer-Paradoxie).<br><strong>Partner B</strong> konzentriert sich auf die <em>Form der Beziehung</em> und das <em>Konzept der Aneignung</em> (Z. 15–25).</p>
+                        </div>
+                        <div class="flow-step">
+                            <span class="flow-step-num">Schritt 2: Pair (ca. 5 Min.)</span>
+                            <div class="flow-step-title">Kooperative Gegenüberstellung</div>
+                            <p class="flow-step-desc">Tauscht eure Befunde im Tandem aus und füllt gemeinsam die dreiteilige Kontrast-Tabelle auf Seite 2 eures Arbeitsblatts aus.</p>
+                        </div>
+                        <div class="flow-step">
+                            <span class="flow-step-num">Schritt 3: Share (Plenum)</span>
+                            <div class="flow-step-title">Kollaborative Sicherung & Urteil</div>
+                            <p class="flow-step-desc">Zusammenführung an der Tafel / Präsentation und abschließendes Urteil über moderne Arbeits- und Lebensformen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stufenhilfe zur Ergebnistabelle (Aufgabe 2) -->
+                <div class="help-card">
+                    <div class="help-card-header">
+                        <span class="help-badge">Stufenhilfe zu Aufgabe 2</span>
+                        <h3 class="help-card-title">Hilfestellungen zur Kontrasttabelle (Entfremdung vs. Aneignung)</h3>
+                    </div>
+                    <p class="guide-desc">Öffnet die Stufen schrittweise, falls ihr Unterstützung bei der Formulierung benötigt:</p>
+                    
+                    <div class="accordion-group">
+                        <div class="accordion-item" style="border: 1px solid var(--border-color); border-radius: var(--radius-sm); margin-bottom: 8px; overflow: hidden;">
+                            <button class="accordion-header" style="width: 100%; text-align: left; padding: 10px 14px; background: var(--light-blue); border: none; font-weight: 600; color: var(--primary-blue); cursor: pointer;">
+                                💡 Stufe 1: Grundlegender Denkanstoß zu den drei Dimensionen
+                            </button>
+                            <div class="accordion-body" style="display: none; padding: 12px 14px; background: #fff; font-size: 0.95rem;">
+                                Überlegt für jede Zeile: <strong>Wie erlebt und gestaltet die Person ihr Tun?</strong>
+                                <ul>
+                                    <li><strong>Dimension 1 (Rollen & Aufgaben):</strong> Tue ich etwas nur, weil „man es so macht“ und weil ich eine Funktion erfülle (Rolle als Maske/Gehäuse), oder kann ich mich mit meiner Aufgabe wirklich identifizieren?</li>
+                                    <li><strong>Dimension 2 (Art der Beziehung):</strong> Bin ich innerlich gleichgültig, abgespalten und fremdgesteuert (obwohl ich mitmache), oder erlebe ich mich als lebendiger, wirksamer Gestalter meines Handelns?</li>
+                                    <li><strong>Dimension 3 (Freiheit & Praxis):</strong> Reicht es aus, bloß zwischen vorgegebenen Konsum- und Berufsoptionen zu wählen (bloße Auswahlfreiheit), oder kann ich mir die Bedingungen meines Lebens reflexiv zu eigen machen (Aneignung)?</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border: 1px solid var(--border-color); border-radius: var(--radius-sm); margin-bottom: 8px; overflow: hidden;">
+                            <button class="accordion-header" style="width: 100%; text-align: left; padding: 10px 14px; background: var(--light-blue); border: none; font-weight: 600; color: var(--primary-blue); cursor: pointer;">
+                                💡 Stufe 2: Wortspeicher zur Zuordnung
+                            </button>
+                            <div class="accordion-body" style="display: none; padding: 12px 14px; background: #fff; font-size: 0.95rem;">
+                                Ordnet diese zentralen Bausteine den beiden Tabellenspalten zu:
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                                    <span class="tag-chip" style="background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Funktionieren ohne Sinn</span>
+                                    <span class="tag-chip" style="background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Gelingende Aneignung (Appropriation)</span>
+                                    <span class="tag-chip" style="background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Beziehung der Beziehungslosigkeit</span>
+                                    <span class="tag-chip" style="background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Selbstwirksamkeit & Urheberschaft</span>
+                                    <span class="tag-chip" style="background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Täter & Opfer zugleich</span>
+                                    <span class="tag-chip" style="background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Reflexives Verhalten zu Voraussetzungen</span>
+                                    <span class="tag-chip" style="background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Nicht »zu Hause« in der Welt</span>
+                                    <span class="tag-chip" style="background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem;">Lebendige Verbundenheit mit der Welt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border: 1px solid var(--border-color); border-radius: var(--radius-sm); margin-bottom: 8px; overflow: hidden;">
+                            <button class="accordion-header" style="width: 100%; text-align: left; padding: 10px 14px; background: var(--light-blue); border: none; font-weight: 600; color: var(--primary-blue); cursor: pointer;">
+                                💡 Stufe 3: Konkrete Formulierungshilfen & Synthese
+                            </button>
+                            <div class="accordion-body" style="display: none; padding: 12px 14px; background: #fff; font-size: 0.95rem;">
+                                <table style="width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 0.9rem;">
+                                    <thead>
+                                        <tr style="background: #f1f5f9; border-bottom: 2px solid #cbd5e1;">
+                                            <th style="padding: 6px; text-align: left;">Dimension</th>
+                                            <th style="padding: 6px; text-align: left; color: #991b1b;">Entfremdung (Funktionieren)</th>
+                                            <th style="padding: 6px; text-align: left; color: #1e40af;">Gelingende Aneignung</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                                            <td style="padding: 6px; font-weight: 600;">1. Rollen & Aufgaben</td>
+                                            <td style="padding: 6px;">Man spielt vorgegebene Rollen perfekt mit, erlebt sie innerlich aber als fremd, starr und entmachtend.</td>
+                                            <td style="padding: 6px;">Man füllt Rollen und Aufgaben mit individuellem Gehalt; man eignet sich die Rollen an, statt sich von ihnen beherrschen zu lassen.</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                                            <td style="padding: 6px; font-weight: 600;">2. Beziehung zu sich/Welt</td>
+                                            <td style="padding: 6px;">„Beziehung der Beziehungslosigkeit“: Indifferenz, Kälte; man ist Opfer der Struktur, aber als Mitspieler zugleich Täter.</td>
+                                            <td style="padding: 6px;">Lebendige Resonanz: Das Subjekt erfährt sich als eigentlicher Urheber seiner Handlungen und ist in der Welt „zu Hause“.</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 6px; font-weight: 600;">3. Freiheit & Praxis</td>
+                                            <td style="padding: 6px;">Defiziente Praxis: Bloße Wahlfreiheit ohne echte Identifikation; Unvermögen, Voraussetzungen mitzugestalten.</td>
+                                            <td style="padding: 6px;">Echte Emanzipation: Aktive Aneignung; Fähigkeit, sich reflexiv und gestaltend zu den eigenen Lebensbedingungen zu verhalten.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zusatzhilfe zur Schnelldenker-Aufgabe -->
+                <div class="help-card">
+                    <div class="help-card-header">
+                        <span class="help-badge">Schnelldenker-Tipp</span>
+                        <h3 class="help-card-title">Denkimpuls zur Didaktischen Reserve (Loft-Büro vs. Entfremdung)</h3>
+                    </div>
+                    <div class="guide-desc">
+                        <em>„Tischkicker, Mate-Tee, Duz-Kultur und flexible Arbeitszeiten: Ist das die Überwindung von Entfremdung?“</em>
+                        <p style="margin-top: 8px;">
+                            <strong>Jaeggis Perspektive hilft bei der Dekonstruktion:</strong> Wenn der Zwang nicht mehr von einem autoritären Chef kommt, sondern ich mich in „flachen Hierarchien“ rund um die Uhr <em>selbst</em> optimiere, bin ich in Reinform <strong>„gleichzeitig Täter und Opfer“</strong>. Die Entfremdung ist nicht verschwunden – sie hat sich lediglich von einem äußeren Zwang in eine internalisierte, subtile Selbstentfremdung verwandelt!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
