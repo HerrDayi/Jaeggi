@@ -54,6 +54,26 @@ document.addEventListener('DOMContentLoaded', () => {
             type: '4. Reflexiv-kritisches Freiheitskonzept',
             def: 'Die Fähigkeit, die gesellschaftlichen und biografischen Ausgangsbedingungen des eigenen Lebens nicht als starre Schicksalstatsache hinzunehmen, sondern sie reflexiv zu hinterfragen und aktiv mitzugestalten.',
             context: 'Freiheit bedeutet nach Jaeggi: Wer sich zu seinen Voraussetzungen nicht verhalten und sie sich nicht aneignen kann, bleibt entfremdet. Wer sie aneignet, gewinnt echte Autonomie.'
+        },
+        'Vermögen zur aktiven Aneignung': {
+            type: '5. Positives Gegenmodell gelingenden Lebens',
+            def: 'Die subjektive Fähigkeit und gesellschaftliche Möglichkeit, sich die vorgefundenen Lebensverhältnisse, Tätigkeiten und Rollen gestaltend zu eigen zu machen.',
+            context: 'Gelingendes Leben erschöpft sich nicht im Konsumieren oder bloßen Auswählen vorgefertigter Angebote, sondern verlangt die aktive Durchdringung der eigenen Praxis.'
+        },
+        'Projekte vorantreiben': {
+            type: '5. Existenzielle Handlungstheorie',
+            def: 'Das selbstbestimmte Verfolgen von bedeutungsvollen Zielen im eigenen Leben, anstatt fremdbestimmte Tagesroutinen bloß abzuarbeiten.',
+            context: 'Wer sein eigenes Leben führt, gestaltet Vorhaben, für die man innerlich brennt und deren Gelingen einem persönlich am Herzen liegt.'
+        },
+        'Identifizieren': {
+            type: '5. Psychologische & philosophische Integration',
+            def: 'Der Zustand der inneren Übereinstimmung mit dem eigenen Tun; das Gegenteil von innerer Distanzierung oder zynischer Gleichgültigkeit.',
+            context: 'Wenn ich mich mit meinen Rollen identifizieren kann, erlebe ich sie nicht mehr als bedrückendes Gefängnis oder falsche Maske, sondern als authentischen Ausdruck meiner selbst.'
+        },
+        'Wirklicher Urheber': {
+            type: '5. Subjektphilosophischer Kernbegriff (Autorschaft)',
+            def: 'Das existenzielle Erleben, nicht fremdgesteuert oder passives Opfer äußerer Mächte zu sein, sondern die Quelle und der Gestalter der eigenen Handlungen.',
+            context: 'Für Jaeggi ist man genau dort frei, wo man sich als wirklicher Autor des eigenen Tuns erfährt – nicht bloß als Funktionär einer vorgegebenen Struktur.'
         }
     };
 
